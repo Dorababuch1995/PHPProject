@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Practice Suite" duration-ms="30559" started-at="2021-12-05T13:39:37Z" finished-at="2021-12-05T13:40:07Z">
+    <groups>
+    </groups>
+    <test name="AgentLogin" duration-ms="30559" started-at="2021-12-05T13:39:37Z" finished-at="2021-12-05T13:40:07Z">
+      <class name="TestRunner.TC_001">
+        <test-method status="PASS" signature="SuiteRun()[pri:0, instance:TestRunner.TC_001@17f6480]" name="SuiteRun" is-config="true" duration-ms="469" started-at="2021-12-05T13:39:36Z" finished-at="2021-12-05T13:39:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SuiteRun -->
+        <test-method status="PASS" signature="BrowserLunch()[pri:0, instance:TestRunner.TC_001@17f6480]" name="BrowserLunch" is-config="true" duration-ms="11945" started-at="2021-12-05T13:39:37Z" finished-at="2021-12-05T13:39:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLunch -->
+        <test-method status="PASS" signature="BrowserSetup()[pri:0, instance:TestRunner.TC_001@17f6480]" name="BrowserSetup" is-config="true" duration-ms="6895" started-at="2021-12-05T13:39:49Z" finished-at="2021-12-05T13:39:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserSetup -->
+        <test-method status="PASS" signature="AgentSignUp()[pri:2, instance:TestRunner.TC_001@17f6480]" name="AgentSignUp" duration-ms="4636" started-at="2021-12-05T13:39:56Z" finished-at="2021-12-05T13:40:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AgentSignUp -->
+        <test-method status="PASS" signature="AgentLogin(java.lang.String, java.lang.String)[pri:3, instance:TestRunner.TC_001@17f6480]" name="AgentLogin" duration-ms="5971" started-at="2021-12-05T13:40:01Z" finished-at="2021-12-05T13:40:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Agent@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Selenium@2021]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AgentLogin -->
+        <test-method status="PASS" signature="TestTime()[pri:0, instance:TestRunner.TC_001@17f6480]" name="TestTime" is-config="true" duration-ms="2" started-at="2021-12-05T13:40:07Z" finished-at="2021-12-05T13:40:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestTime -->
+        <test-method status="PASS" signature="KillBrowser()[pri:0, instance:TestRunner.TC_001@17f6480]" name="KillBrowser" is-config="true" duration-ms="0" started-at="2021-12-05T13:40:07Z" finished-at="2021-12-05T13:40:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KillBrowser -->
+        <test-method status="PASS" signature="SuiteFinied()[pri:0, instance:TestRunner.TC_001@17f6480]" name="SuiteFinied" is-config="true" duration-ms="0" started-at="2021-12-05T13:40:11Z" finished-at="2021-12-05T13:40:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SuiteFinied -->
+      </class> <!-- TestRunner.TC_001 -->
+    </test> <!-- AgentLogin -->
+  </suite> <!-- Practice Suite -->
+</testng-results>
