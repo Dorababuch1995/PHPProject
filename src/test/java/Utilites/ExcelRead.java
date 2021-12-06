@@ -26,7 +26,6 @@ public class ExcelRead {
                 //cell is String
                 if (cellType==1){
                    value = cell.getStringCellValue();
-
                    //cell is data
                 }else if(DateUtil.isCellDateFormatted(cell)) {
                     Date d = cell.getDateCellValue();
@@ -48,13 +47,9 @@ public class ExcelRead {
         }
         return value;
     }
-
     public static void main(String[] args) {
-
         //ReadXlData("CRM",1,1);
-
         System.out.println( ReadXlData("CRM",1,1));
-
     }
 
 }

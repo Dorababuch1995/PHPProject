@@ -34,12 +34,17 @@ public class ReadConfig {
     }
 
 
-    public static String ApplicationURL(){
+    public static String AgentApplicationURL(){
 
-        String url = ReadPropertiesData("ApplicationURL");
+        String url = ReadPropertiesData("AgentApplicationURL");
         return url;
     }
 
+    public static String DemoApplicationURL(){
+
+        String url = ReadPropertiesData("DemoApplicationURL");
+        return url;
+    }
 
 
 

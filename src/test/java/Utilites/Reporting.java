@@ -18,15 +18,19 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class Reporting extends TestListenerAdapter {
+public class Reporting extends TestListenerAdapter
+{
     public ExtentHtmlReporter htmlReporter;
     public ExtentReports extent;
     public ExtentTest logger;
 
 
+
+
     public void onStart(ITestContext testContext)
     {
         String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
+
         String repName="Test-Report-"+timeStamp+".html";
 
         htmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+ "/test-output/"+repName);//specify location of the report
@@ -42,12 +46,13 @@ public class Reporting extends TestListenerAdapter {
         htmlReporter.config().setDocumentTitle("PHP TRAVEL Test Project"); // Tile of report
         htmlReporter.config().setReportName("PHP TRAVEL Functional Test Automation Report"); // name of the report
         htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP); //location of the chart
-        htmlReporter.config().setTheme(Theme.DARK);
+        htmlReporter.config().setTheme(Theme.STANDARD);
     }
 
     public void onTestSuccess(ITestResult tr)
     {
         logger=extent.createTest(tr.getName()); // create new entry in th report
+
         logger.log(Status.PASS,MarkupHelper.createLabel(tr.getName(),ExtentColor.GREEN)); // send the passed information to the report with GREEN color highlighted
     }
 

@@ -10,4 +10,5 @@ public interface FilePaths {
     public static String Log4jpath ="C:\\Users\\dorab\\AppCRM\\PHPTravelProject\\src\\test\\resources\\PropertiesFiles\\log4j.properties";
     public static String XlPath ="C:\\Users\\dorab\\AppCRM\\PHPTravelProject\\src\\test\\resources\\ExcelFiles\\AutoApp.xlsx";
 
+
 }

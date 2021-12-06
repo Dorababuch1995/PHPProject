@@ -40,13 +40,10 @@ public class BaseClass extends DiverFactory {
     @BeforeClass
        public void BrowserSetup(){
 
-
-
         TimeDate td = new TimeDate();
         driver.manage().deleteAllCookies();
         System.out.println("Test Finised in  "+" "+ "Time "+" " +td.currentDate() );
-       driver.get(ReadConfig.ApplicationURL());
-
+       driver.get(ReadConfig.AgentApplicationURL());
         logger.info("Browser URL ");
     }
 

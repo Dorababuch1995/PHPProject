@@ -18,7 +18,7 @@ public class TC_001 extends BaseClass {
     public  static TestUtilites tu = new TestUtilites();
 
 
-//    @Test(priority = 1)
+//    @Test(enabled=false )//test skipp
 //    public void NavigateToAgentPage() throws IOException {
 //
 //        AgentLogin agentLogin = new AgentLogin(driver);
@@ -26,13 +26,16 @@ public class TC_001 extends BaseClass {
 //        driver.findElement(By.xpath("(//a[@class='btn btn-primary btn-lg btn-block'])[1]")).submit();
 //
 //        tu.SwtichToWindow();
+//
 //        tu.captureScreen(driver,"NavigateToAgentPage");
+//
 //    }
 
     @Test(priority = 2)
     public void AgentSignUp(){
 
         AgentLogin agentLogin = new AgentLogin(driver);
+        tu.ScolDown(agentLogin.getSignUp());
 
         agentLogin.getSignUp().click();
             System.out.println("SignUp");

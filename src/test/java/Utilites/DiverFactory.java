@@ -14,17 +14,12 @@ public class DiverFactory {
     public static WebDriver driver;
 
 
-
-
-
     public void Initilization(String BrowserName){
 
         if (BrowserName.equals("chrome")){
 
             System.setProperty("webdriver.chrome.driver", FilePaths.ChromeDrierPath);
             driver = new ChromeDriver();
-
-
 
         }else if (BrowserName.equals("FireFox")){
 
@@ -36,7 +31,6 @@ public class DiverFactory {
 
       //      System.setProperty("webdriver.chrome.driver", FilePaths.InternetExplor);
             driver = new InternetExplorerDriver();
-
 
         } else {
 

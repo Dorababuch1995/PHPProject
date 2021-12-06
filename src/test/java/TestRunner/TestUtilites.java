@@ -2,10 +2,7 @@ package TestRunner;
 
 import BaseRunner.BaseClass;
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.Select;
 
 import java.io.File;
@@ -53,6 +50,13 @@ public class TestUtilites extends BaseClass {
         Select s = new Select(e);
         s.selectByVisibleText(text);
 
+    }
+
+
+
+    public void ScolDown(WebElement Element){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView();", Element);
     }
 
 
